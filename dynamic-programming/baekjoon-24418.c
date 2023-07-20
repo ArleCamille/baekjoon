@@ -15,6 +15,13 @@ int search(int x, int y) {
     return result;
 }
 
+/*
+search(5, 5)
+5, 5는 4,5 + 1회와 5,4 + 1회를 부른다.
+이를 일반화하면 search(x, y) = search(x-1, y) + search(x, y-1) + 1
+search(x, y)의 값을 한 번 구했다면, memory 배열에 저장 
+*/
+
 int main(void) {
     scanf("%d", &n);
 
