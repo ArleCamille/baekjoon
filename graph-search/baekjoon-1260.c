@@ -34,7 +34,7 @@ int main(void) {
     while (head != tail) {
         // 큐가 비었으면 더 이상 탐사가 불가능하다는 뜻이므로 종료해도 무방.
         node = queue[head++];
-                // 아까 DFS에서 visited=1이 들른 상태이므로 이걸 재활용해서 반대로 visited=0을 들른 것으로 처리.
+        // 아까 DFS에서 visited=1이 들른 상태이므로 이걸 재활용해서 반대로 visited=0을 들른 것으로 처리.
         if (visited[node]) {
             printf("%d ", node + 1);
             visited[node] = 0;
